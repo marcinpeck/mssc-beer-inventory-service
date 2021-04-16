@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 /**
  * Created by marcin.peck on 14.04.2021
  */
@@ -12,9 +14,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 @NoArgsConstructor
-public class BeerEvent {
+public class BeerEvent implements Serializable {
 
-    static final long serialVersionUID = -7145637918260528972L;
+    static final long serialVersionUID = -5781515597148163111L;
 
     private BeerDto beerDto;
 
